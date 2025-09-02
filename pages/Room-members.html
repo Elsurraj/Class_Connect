@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frds</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="../images/atbu.jpg" alt="" srcset="">
+                </div>
+                <div class="navbar">
+                    <ul id="menuItems">
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="chart.html">Chart</a></li>
+                        <li><a href="Room-members.html" class="active">Room Members</a></li>
+                        <li><a href="memories.html">Memories</a></li>
+                    </ul>
+                </div>            
+                <div class="login-btn">
+                     <a href="https://wa.me/2347061329623" class="btn whatsapp-icon" target="_blank">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+                    <!-- <a href="#" class="btn"> Dashboard &#8594;</a> -->
+                </div>
+                <div class="menubar-img">
+                    <img src="../images/menu-bar.png" class="menu-bar" onclick="menutoggle();">
+                </div>
+            </nav>
+        </div>
+    
+     <div class="container">
+         <div class="members-container">
+            <h1 data-aos="fade-down" data-aos-duration='1500'>Members Information</h1>
+
+            <div class="sorting-div">                
+              <div class='search__widget seaching-div' data-aos="fade-right"  data-aos-duration='1500'>
+                <input style="cursor: text;"
+                  type='text'
+                  placeholder='Searching for .....'
+                  value=''
+                  onChange=''
+                />
+                <span>
+                  <i class='ri-search-line'></i>
+                </span>
+              </div>           
+
+              <div class='sorting__widget sorting-widget ' data-aos="fade-left"  data-aos-duration='1500'>
+                <select style='width: 50'>
+                  <option>Sort by</option>
+                  <option value='ascending'>Alphabetically A-Z</option>
+                  <option value='descending'>Alphabetically Z-A</option>        
+                  <option value='age'>Age</option>             
+                </select>
+              </div>           
+            </div>
+
+        <div class="col"  >
+          <div class="col-4" data-aos="fade-up"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../img/others/cj-1.jpeg" alt="">
+           </div>
+            <h3>Name: <span>Suraj Abubakhar</span> </h3>
+            <ul>
+                <li><span>Phone:</span> +2347061329623</li>
+                <li>Email: elsurraj@gmail.com</li>
+                <li>Address: Rikkos Jos, Plateau State</li>
+            </ul>
+            <button onclick="toggleContent('content1')">See More...</button>
+            <div id="content1" class="content">
+                <p>A passionate and creative Web Developer, specialize
+                   in crafting intuitive, user-friendly websites. My drive lies in transforming complex
+                    challenges into simple, elegant solutions that enhance user engagement and drive success.
+                    Beyond coding, I'm an avid fan of football, i enjoy reading, i love to travel,
+                    and consistently explore new technologies.</p>
+            </div>
+          </div>
+          <div class="col-4" data-aos="fade-down"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../img/others/hamman.jpg" >
+           </div>
+            <h3>Name: <span>Hamman Tukur Abare</span> </h3>
+            <ul>
+                <li>Phone: +2349132330634</li>
+                <li>Email: hammanabare001@gmail.com</li>
+                <li>Address: Tudun wada Kaduna </li>
+            </ul>
+            <button onclick="toggleContent('content2')">See More...</button>
+            <div id="content2" class="content">
+                <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                 </p>
+            </div>
+          </div>
+          <div class="col-4" data-aos="fade-up"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../img/others/orume.jpg" alt="">
+           </div>
+            <h3>Name: <span>Jibrin Orume Usman </span> </h3>
+            <ul>
+                <li>Phone: +2348033466293</li>
+                <li>Email: jibrinbinuthmanorume66@gmail.com </li>
+                <li>Address: Doma, Nasarawa state </li>
+            </ul>
+            <button onclick="toggleContent('content3')">See More...</button>
+            <div id="content3" class="content">
+                <p>I am a native of Alago from Nasarawa state. I hail from Doma Local Government.
+                     I am passionate about
+                     Learning—both western and Islamic education. I am engaged; soon to 
+                     marry. And I am an advocate of Peaceful and positive change.</p>
+            </div>
+          </div>
+          <div class="col-4" data-aos="fade-down"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../img/others/magic.jpg" alt="">
+           </div>
+            <h3>Name: <span>Mustapha Danladi </span> </h3>
+            <ul>
+                <li>Phone: +2347068849009</li>
+                <li>Email: mustaphadanladi6@gmail.com </li>
+                <li>Address: Patiskun </li>
+            </ul>
+            <button onclick="toggleContent('content4')">See More...</button>
+            <div id="content4" class="content">
+                <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                     et dolore magnaLorem lorem ipsum dolor</p>
+            </div>
+          </div>
+          <div class="col-4" data-aos="fade-right"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../img/others/teacher.jpg" alt="">
+           </div>
+            <h3>Name: <span>Saifullahi Bashir </span> </h3>
+            <ul>
+                <li>Phone: +2348080709970 </li>
+                <li>Email: saifullahibasheer25@gmail.com</li>
+                <li>Address:Kauran Wali, Kaduna State </li>
+            </ul>
+            <button onclick="toggleContent('content5')">See More...</button>
+            <div id="content5" class="content">
+                <p>: I was born in kauran wali kudan local government of kaduna state of Nigeria.
+                     I attended my pri. School at Central Primary School kauran wali, and my secondary 
+                     School at Barewa College Zaria, I also attend my tertiary institution (NCE) at Federal 
+                     college of education Zaria studied computer/biology and finally 
+                    come to Abubakar tafawa balewa University Bauchi were I earned my B.Tech in Computer science.</p>
+            </div>
+          </div>
+          <div class="col-4" data-aos="fade-up"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../img/others/manunfshi.jpg" alt="">
+           </div>
+            <h3>Name: <span>Sai'd Abdulbasir Malumfashi </span> </h3>
+            <ul>
+                <li>Phone: +2347068511966</li>
+                <li>Email: talk2saeedmlf@gmail.com</li>
+                <li>Address: Liman Abkr road Malumfashi, katisna State.</li>
+            </ul>
+            <button onclick="toggleContent('content6')">See More...</button>
+            <div id="content6" class="content">
+                <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+            </div>
+          </div>
+          <div class="col-4" data-aos="fade-up"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../img/others/abba-1.jpg" alt="">
+           </div>
+            <h3>Name: <span>Musa Ibrahim Khalil  </span> </h3>
+            <ul>
+                <li>Phone: +2348069711887</li>
+                <li>Email: talk2musakhalil@gmail.com </li>
+                <li>Address: No15 Maina Bukar Street Potiskum, Yobe State </li>
+            </ul>
+            <button onclick="toggleContent('content7')">See More...</button>
+            <div id="content7" class="content">
+                <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  </p>
+            </div>
+          </div>
+          <div class="col-4" data-aos="fade-left"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../images/7.jpeg" alt="">
+           </div>
+            <h3>Name: <span>Nuhu Garba </span> </h3>
+            <ul>
+                <li>Phone:</li>
+                <li>Email:</li>
+                <li>Address: </li>
+            </ul>
+            <button onclick="toggleContent('content8')">See More...</button>
+            <div id="content8" class="content">
+                <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                     adipisicing elit, sed </p>
+            </div>
+          </div>
+          <div class="col-4" data-aos="zoom-in"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../img//others//bokaa.jpg" alt="">
+           </div>
+            <h3>Name: <span>Suleman Yusuf</span> </h3>
+            <ul>
+                <li>Phone: +2347033740561</li>
+                <li>Email:suleimanyusufwuyo@gmail.com</li>
+                <li>Address: Gombe </li>
+            </ul>
+            <button onclick="toggleContent('content10')">See More...</button>
+            <div id="content10" class="content">
+                <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  </p>
+            </div>
+          </div>
+          <div class="col-4" data-aos="fade-up"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../images/7.jpeg" alt="">
+           </div>
+            <h3>Name: <span>Babangida Muhd</span> </h3>
+            <ul>
+                <li>Phone: +234</li>
+                <li>Email:</li>
+                <li>Address: </li>
+            </ul>
+            <button onclick="toggleContent('content11')">See More...</button>
+            <div id="content11" class="content">
+                <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  </p>
+            </div>
+          </div>
+          <div class="col-4" data-aos="fade-up"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../images/7.jpeg" alt="">
+           </div>
+            <h3>Name: <span>Saeed DanKaka</span> </h3>
+            <ul>
+                <li>Phone: +2348162688380</li>
+                <li>Email: saeedsuleiman530@gmail.com</li>
+                <li>Address: C.O.E Waka-Biu, Borno State </li>
+            </ul>
+            <button onclick="toggleContent('content12')">See More...</button>
+            <div id="content12" class="content">
+                <p>Saidu Suleiman is a Nigerian writer, innovator, and tech enthusiast raised in Biu, Borno State. 
+                    He studied Physics/Computer at the College of Education Waka-Biu, and later earned a degree 
+                    in Computer Science from Abubakar Tafawa Balewa University (ATBU), Bauchi. Saidu blends Islamic 
+                    values, poetic reflection, and tech-driven solutions to address issues like education, insecurity,
+                     and sustainability. Through initiatives like BIU EMIRATE TECH AND INNOVATION HUB he mentors youth 
+                     and empowers his community. He aspires to
+                     gain global recognition for using writing and innovation to inspire meaningful change </p>
+            </div>
+          </div>
+          <div class="col-4" data-aos="zoom-in"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../img/others//uk.jpg" alt="">
+           </div>
+            <h3>Name:<span> Ukasha Ibrahim</span> </h3>
+            <ul>
+                <li>Phone: +2347041566978</li>
+                <li>Email:ukashaibrahim25@gmail.com</li>
+                <li>Address:No.20 Old GRA, Bauchi State</li>
+            </ul>
+            <button onclick="toggleContent('content13')">See More...</button>
+            <div id="content13" class="content">
+                <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  </p>
+            </div>
+          </div>
+          <div class="col-4" data-aos="fade-down"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../img//others//jb.jpg" alt="">
+           </div>
+            <h3>Name:<span> Haruna Jibrin</span> </h3>
+            <ul>
+                <li>Phone: +2349030112542</li>
+                <li>Email:jbcoded1270@gmail.com</li>
+                <li>Address: Ogudu State</li>
+            </ul>
+            <button onclick="toggleContent('content14')">See More...</button>
+            <div id="content14" class="content">
+                <p>I’m Haruna Jibril, a recent Computer Science graduate from Abubakar Tafawa Balewa 
+                    University Bauchi State, specializing in Network Engineering. 
+                    I’ve worked on *Networking 
+                *CCTV        *Intercom  *Smartlock
+                     </p>
+            </div>
+          </div>
+          <div class="col-4" data-aos="fade-down"   data-aos-duration='1500'>
+           <div class="col-4-img">
+             <img src="../img//others/by-2.jpg" alt="">
+           </div>
+            <h3>Name:<span> Late Dahiru Suleman</span> </h3>
+            <ul>
+                <li>Phone: +23470000000</li>
+                <li>Email:xxxx@gmail.com</li>
+                <li>Address:Yakubu Wanka, Bauchi State</li>
+            </ul>
+            <button onclick="toggleContent('content15')">See More...</button>
+            <div id="content15" class="content">
+                <p>Dahiru passed away few months after our graduation due to an ilness. He didn't got the oppurtunity to 
+                    his result. He Was a kind, humble, honest and very hardworking person, he was a Guru in both Islamic and western knowledge.
+                <br> We all pray may the almight Allah have mercy upon him, forgive him and grant him jannatul firdaus as his final abode.   </p>
+            </div>
+          </div>
+        
+        </div>
+        
+      </div>
+     </div>
+    </div>
+
+<!-- -----------------footer---------------- -->
+<div class="footer" data-aos="fade-up"   data-aos-duration='1500'>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download our App for Andoid and ios mobile phone.</p>
+                <div class="app-logo">
+                   <ul><li><a href="#"><i class="ri-apple-fill"></i></a></li></ul>
+                   <ul><li><a href="#"><i class="ri-google-play-fill"></i></a></li></ul>
+                </div>
+            </div>
+            <div class="footer-col-3">
+                <h3>Information</h3>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Membership</li>
+                    <li>Purchases Guide</li>
+                    <li>Terms of Services</li>
+                </ul>
+            </div>
+           <div class="footer-col-3">
+        <h3>Follow us </h3> <br>
+        <h5>
+            <ul>
+                <li> <a href="https://wa.me/2347061329623" class="whatsapp-icon" target="_blank"><i class="ri-whatsapp-line"></i></a></li>
+            </ul>
+            <ul><li>
+                <a href="https://www.facebook.com/surraj.ahmeed.abubakharHardo" target="_blank">
+                 <i class="ri-facebook-line"></i>
+            </a>
+            </li></ul>
+            <ul><li>
+                <a href="https:www.github.com/elsurraj" target="_blank">
+                 <i class="ri-github-line"></i>
+            </a>
+            </li></ul>
+            <ul><li>
+                <a href="#"> <i class="ri-linkedin-line"></i></a>
+            </li></ul>
+        </h5>
+      </div>
+        </div>
+        <hr>
+        <p class="copy-Right">Copyright © <span id="currentYear"></span> Amsaj_Tech. All Right Reserved. (Surraj) </p>
+    </div>
+</div>
+    </footer>
+<script src="../js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+    AOS.init();
+  </script>
+</body>
+</html>
